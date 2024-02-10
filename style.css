@@ -1,0 +1,25 @@
+body,head{
+margin: 0;
+padding: 0;
+}
+
+
+
+.wrapper{
+    margin: 50px 24px;
+}
+@media only screen and (min-width: 376px) {
+    .wrapper{
+        margin: 50px 27px;
+    }
+  }
+@media only screen and (min-width: 641px) {
+    .wrapper{
+        margin: 50px 34px;
+    }
+  }
+@media only screen and (min-width: 1134px ) {
+    .wrapper{
+        margin: 50px 124px;
+    }
+  }
