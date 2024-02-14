@@ -30,7 +30,7 @@ line-height: 1.7rem;
 }
 .headlogo{
     margin-top: 8px;
-    color: var(--lightgrey);
+    ;
 }
 .headbar{
     display: flex;
@@ -38,11 +38,12 @@ line-height: 1.7rem;
 }
 
 .logotext{
-    line-height: 0;}
+    line-height: 0;
+}
 .nav{
     margin-left: auto;
 }
-.nav ul{
+ul{
     margin: 0;
     list-style: none;
     display: flex;
@@ -50,11 +51,29 @@ line-height: 1.7rem;
     gap: 9px;
     
 }
-.nav ul li a{
+ul li{
+    display: flex;
+    flex-direction: column;
+    height: 27.2px;
+    overflow: hidden;
+}
+ul li a{
     color: var(--lightgrey);
     text-decoration: none;
-    
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;   
 }
+.hiddentext{
+transform: translateY(100%);
+}
+ul li:hover .hiddentext{
+    transform: translateY(-100%);
+    color: var(--accentgreen);
+    text-decoration: underline;
+}
+ul li:hover .maintext{
+    transform: translateY(-100%);
+}
+
 
 @media only screen and (min-width: 376px) {
     .wrapper{
