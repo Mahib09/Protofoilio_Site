@@ -4,7 +4,8 @@
     --lightgrey:#DBD9D9;
     --accentgreen:#656552;
     --white:#ffffff;
-    --paragraphDesk:1.456rem;
+    --paragraphDesk:1.2rem;
+    --maintext: 7.4rem;
 
 }
 
@@ -28,17 +29,19 @@ line-height: 1.7rem;
     margin: 50px 24px;
 
 }
-.headlogo{
-    margin-top: 8px;
-    color: #ffffff;
+.home{
+    height: 100vh;
+    position: ;
 }
 .headbar{
     display: flex;
     gap: 9px;
 }
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: var(--accentgreen);
 
-.logotext{
-    line-height: 0;
 }
 .nav{
     margin-left: auto;
@@ -73,8 +76,19 @@ ul li:hover .hiddentext{
 ul li:hover .maintext{
     transform: translateY(-100%);
 }
-
-
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main h1{
+    font-size: var(--maintext);
+}
+.about{
+    height: 100vh;
+    background-color: var(--lightgrey);
+}
 @media only screen and (min-width: 376px) {
     .wrapper{
         margin: 50px 27px;
@@ -83,10 +97,5 @@ ul li:hover .maintext{
 @media only screen and (min-width: 641px) {
     .wrapper{
         margin: 50px 34px;
-    }
-  }
-@media only screen and (min-width: 1134px ) {
-    .wrapper{
-        margin: 50px 124px;
     }
   }
