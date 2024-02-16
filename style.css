@@ -4,8 +4,9 @@
     --lightgrey:#DBD9D9;
     --accentgreen:#656552;
     --white:#ffffff;
-    --paragraphDesk:1.2rem;
+    --paragraphDesk:1.45rem;
     --maintext: 7.4rem;
+    --
 
 }
 
@@ -19,28 +20,28 @@ html{
 body{
 margin: 0;
 font-family: 'General Sans', sans-serif;
-background-color: var(--darkgrey);
-color: var(--lightgrey);
+background-color: var(--lightgrey);
+color: var(--darkgrey);
 font-size: var(--paragraphDesk);
 line-height: 1.7rem;
+
 }
 
 .wrapper{
     margin: 50px 24px;
 
 }
-.home{
-    height: 100vh;
-    position: ;
-}
 .headbar{
     display: flex;
     gap: 9px;
+    height: 21vh;
 }
 .logo{
-    height: 50px;
-    width: 50px;
-    background-color: var(--accentgreen);
+    height: 100px;
+    width: 100px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+
 
 }
 .nav{
@@ -61,7 +62,7 @@ ul li{
     overflow: hidden;
 }
 ul li a{
-    color: var(--lightgrey);
+    color: var(--darkgrey);
     text-decoration: none;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;   
 }
@@ -76,18 +77,49 @@ ul li:hover .hiddentext{
 ul li:hover .maintext{
     transform: translateY(-100%);
 }
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+.hero{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: -1rem;
+z-index: 2;
+height: 79vh;
 }
-.main h1{
+.hero_header1{
     font-size: var(--maintext);
+    line-height: 199.6px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10rem;
+    text-transform: uppercase;
 }
-.about{
+.hero_header2{
+    font-size: var(--maintext);
+    line-height: 199.6px;
+    margin-top: -5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-left:10rem;
+}
+.hero_subtext{
+    font-size: var(--paragraphDesk);
+    margin-top: -2rem;
+}
+.hero_lower{
+    margin-top: -1rem;
+    font-size: 1rem;
+}
+#visual{
+    position: absolute;
+    transform: translateY(-400px);
+    z-index: -2;
+    left: 180px;
+}
+#about{
     height: 100vh;
-    background-color: var(--lightgrey);
+    background-color: var(--darkgrey);
 }
 @media only screen and (min-width: 376px) {
     .wrapper{
@@ -97,5 +129,10 @@ ul li:hover .maintext{
 @media only screen and (min-width: 641px) {
     .wrapper{
         margin: 50px 34px;
+    }
+  }
+  @media only screen and (min-width: 1133px) {
+    .wrapper{
+        margin: 50px 60px;
     }
   }
