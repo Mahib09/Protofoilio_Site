@@ -125,13 +125,134 @@ height: 79vh;
     .wrapper{
         margin: 50px 27px;
     }
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    a{
+        font-size: 1rem;
+        line-height: 1.168rem;
+    }
+    .hero{
+        align-items: flex-start;
+        margin-top: 300px;
+        margin-bottom: 0;
+        padding: 0;
+        height: max-content;
+    }
+    .hero_header1{
+        font-size: 2.3rem;
+        text-align: left;
+        line-height: 2.6864rem;
+        margin: 0;
+    }
+    .hero_header2{
+        font-size: 2.3rem;
+        text-align: left;
+        line-height: 2.336rem;
+        flex-direction: column;
+        margin: 0;
+    }
+    .hero_subtext{
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 1.5184rem;
+        margin: 0;
+    }
+    .hero_lower{
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.168rem;
+        margin: 0;
+
+    }
   }
 @media only screen and (min-width: 641px) {
     .wrapper{
         margin: 50px 34px;
     }
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    a{
+        font-size: 1rem;
+        line-height: 1.168rem;
+    }
+    .hero{
+        align-items: flex-start;
+        margin-top: 300px;
+        margin-bottom: 0;
+        padding: 0;
+        height: max-content;
+    }
+    .hero_header1{
+        font-size: 2.3rem;
+        text-align: left;
+        line-height: 2.6864rem;
+        margin: 0;
+    }
+    .hero_header2{
+        font-size: 2.3rem;
+        text-align: left;
+        line-height: 2.336rem;
+        flex-direction: column;
+        margin: 0;
+    }
+    .hero_subtext{
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 1.5184rem;
+        margin: 0;
+    }
+    .hero_lower{
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.168rem;
+        margin: 0;
+
+    }
   }
-  @media only screen and (min-width: 1133px) {
+  @media only screen and (min-width: 1180px) {
+    .wrapper{
+        margin: 50px 60px;
+    }
+    .hero{
+        align-items: center;
+        margin-bottom: 300px;
+        padding: 0;
+        height: max-content;
+        margin-top: 100px;
+    }
+    .hero_header1{
+        font-size: 3.3rem;
+        text-align: center;
+        line-height: 3.6864rem;
+        margin: 0;
+    }
+    .hero_header2{
+        font-size: 3.3rem;
+        text-align: center;
+        line-height: 3.6864rem;
+        flex-direction: column;
+        margin: 0;
+    }
+    .hero_subtext{
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.5184rem;
+        margin: 0;
+    }
+    .hero_lower{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.168rem;
+        margin: 0;
+
+    }
+
+  }
+  @media only screen and (min-width: 1181px) {
     .wrapper{
         margin: 50px 60px;
     }
