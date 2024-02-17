@@ -129,16 +129,16 @@ height: 79vh;
     border-radius: 50%;
     color: black;
     border: white;
-    margin-top: -50px;
+    margin-top: -150px;
     background-color: #161414;
-    margin-left: 80%;
+    margin-left: 85%;
+    transition: all 0.3s ease-in-out;
 }
 .hide{
     left: 500px;
 }
 .show{
-
-    background-color: -500px;
+    
 }
 #about{
     height: 100vh;

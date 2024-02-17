@@ -1,3 +1,4 @@
+//scroll navbar
 myID = document.getElementById("hidnav");
 
 var myScrollFunc = function() {
@@ -8,5 +9,5 @@ var myScrollFunc = function() {
     myID.className = "box hide"
   }
 };
-
 window.addEventListener("scroll", myScrollFunc);
+
