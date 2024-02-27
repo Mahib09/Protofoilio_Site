@@ -6,12 +6,14 @@
     --white:#ffffff;
     --paragraphDesk:1.45rem;
     --maintext: 7.4rem;
+    --header:4.765rem;
 
 }
 
 html{
     box-sizing: border-box;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 *,*::before,*::after{
     box-sizing: inherit;
@@ -19,6 +21,7 @@ html{
 body{
 margin: 0;
 font-family: 'General Sans', sans-serif;
+/*background-image: url(/Assets/Images/photo-1532637644947-13094c2745f1.avif);*/
 background-color: var(--lightgrey);
 color: var(--darkgrey);
 font-size: var(--paragraphDesk);
@@ -35,20 +38,12 @@ line-height: 1.7rem;
     gap: 9px;
     height: 21vh;
 }
-.shownlogo{
+.logo .shownlogo{
+    color: var(--darkgrey);
+    text-decoration: none;
 
 }
-.hiddenlogo{
-transform: translateX(200%);
-}
 
-.hiddenlogo:hover{
-    transform: translateX(-100%);
-    color: var(--accentgreen);
-}
-.shownlogo:hover{
-    transform: translateX(-100%);
-}
 .nav{
     margin-left: auto;
 }
@@ -129,7 +124,7 @@ height: 79vh;
     border-radius: 50%;
     color: black;
     border: white;
-    margin-top: -150px;
+
     background-color: #161414;
     margin-left: 85%;
     transition: all 0.3s ease-in-out;
@@ -140,9 +135,48 @@ height: 79vh;
 .show{
     
 }
-#about{
-    height: 100vh;
+
+.wrapper-second{
+    
+}
+.about{
+
     background-color: var(--darkgrey);
+    color: var(--lightgrey);  
+}
+.aboutheader{
+    padding-top: 80px;
+    padding-left: 123px;
+    font-size: var(--header);
+    
+}
+
+.about-content{
+padding: 20px 123px 80px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+.skills{
+    background-color: var(--darkgrey);
+    color: var(--lightgrey);
+
+}
+.skillsheader{
+    padding-top: 80px;
+    padding-left: 123px;
+    font-size: var(--header);
+    margin: 0;
+}
+.skills-content{
+    padding: 20px 123px 80px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 30px;
 }
 @media only screen and (min-width: 1181px) {
     .wrapper{
