@@ -171,12 +171,56 @@ gap: 30px;
     margin: 0;
 }
 .skills-content{
-    padding: 20px 123px 80px;
+padding: 20px 123px 80px;
 display: flex;
 flex-direction: row;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 gap: 30px;
+}
+.wholeacc{
+    display: flex;
+    flex-direction: column;
+}
+.accordion{
+    width: 500px;
+    background-color: var(--darkgrey);
+    color: var(--lightgrey);
+}
+.accordion-header{
+    display: flex;
+    margin: 5px;
+    margin-bottom: 0;
+    border-bottom: 5px solid var(--lightgrey);
+}
+.accordion-header button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--lightgrey);
+    margin-left: auto;
+}
+.accordion-content{
+background-color: var(--lightgrey);
+color: var(--darkgrey);
+padding: 10px;
+display: none;
+}
+.projects{
+    background-color: var(--darkgrey);
+    color: var(--lightgrey);
+    height: 100vh;
+    
+}
+.projectsheader{
+    padding-top: 80px;
+    padding-left: 123px;
+    font-size: var(--header);
+    margin: 0;
+    
+}
+.project-contents{
+    display: grid;
 }
 @media only screen and (min-width: 1181px) {
     .wrapper{
