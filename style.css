@@ -27,7 +27,95 @@ body {
   color: var(--darkgrey);
   font-size: var(--paragraphDesk);
   line-height: 1.7rem;
+  scroll-behavior: smooth;
   
+}
+.hamburger-btn{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--accentgreen);
+  position: fixed;
+  z-index: 100;
+  margin: -100px 0 0 93%;
+  visibility: hidden;
+  transition: visibility 0.3s ease-in-out;
+}
+.hamburger-btn.active{
+visibility: visible;
+
+}
+.hamburger-btn:hover{
+  background-color: var(--lightgrey);
+}
+.hamburger{
+position: relative;
+  display: inline-block;
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--darkgrey);
+  margin: 6px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger.is-active:before{
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active:after{
+  transform: rotate(45deg) translate(-9px, -8px);
+
+}
+.hamburger.is-active .bar{
+  opacity: 0;
+}
+
+
+.scroll-nav{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 30%;
+  min-height: 100vh;
+  background-color: var(--lightgrey);
+  padding-top: 8vh;
+  z-index: 98;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-nav.is-active{
+  left:70%;
+  box-shadow: 0 0 100px rgb(0, 0, 0); /* Add box-shadow when active */
+}
+
+.scroll-nav a{
+  display: block;
+  text-align: center;
+  color: var(--darkgrey);
+  text-decoration: none;
+  margin-top: 15%;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.scroll-nav a:hover{
+  text-decoration: underline;
+  transform: translateX(5px);
+  list-style-type: circle var(--black);
+
 }
 
 .wrapper {
@@ -114,27 +202,6 @@ ul li:hover .maintext {
   margin-top: -1rem;
   font-size: 1rem;
 }
-#visual {
-  position: absolute;
-  transform: translateY(-400px);
-  z-index: -2;
-  left: 180px;
-}
-.box {
-  height: 100px;
-  width: 100px;
-  position: fixed;
-  border-radius: 50%;
-  color: black;
-  border: white;
-
-  background-color: #161414;
-  margin-left: 85%;
-  transition: all 0.3s ease-in-out;
-}
-.hide {
-  left: 500px;
-}
 .about {
   background-color: var(--darkgrey);
   color: var(--lightgrey);
@@ -162,42 +229,6 @@ ul li:hover .maintext {
   padding-left: 123px;
   font-size: var(--header);
   margin: 0;
-}
-.skills-content {
-  padding: 20px 123px 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-}
-.wholeacc {
-  display: flex;
-  flex-direction: column;
-}
-.accordion {
-  width: 500px;
-  background-color: var(--darkgrey);
-  color: var(--lightgrey);
-}
-.accordion-header {
-  display: flex;
-  margin: 5px;
-  margin-bottom: 0;
-  border-bottom: 5px solid var(--lightgrey);
-}
-.accordion-header button {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  color: var(--lightgrey);
-  margin-left: auto;
-}
-.accordion-content {
-  background-color: var(--lightgrey);
-  color: var(--darkgrey);
-  padding: 10px;
-  display: none;
 }
 .projects {
   background-color: var(--darkgrey);
@@ -227,6 +258,7 @@ ul li:hover .maintext {
   align-items: flex-start;
   gap: 5px;
 }
+
 .project-info p {
   margin: 0;
   margin-right: auto;
@@ -304,7 +336,10 @@ footer {
   border-radius: 50%;
   background-color: var(--accentgreen);
 margin-left: 20px;
+
 }
+
+
 footer h1{
   font-size: var(--maintext);
   line-height: 199.6px;
