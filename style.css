@@ -39,7 +39,7 @@ body {
   z-index: 100;
   margin: -100px 0 0 93%;
   visibility: hidden;
-  transition: visibility 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(.7, 0, .2, 1);
 }
 .hamburger-btn.active{
 visibility: visible;
@@ -87,26 +87,27 @@ position: relative;
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 0;
+  top: 3vh;
   left: 100%;
   width: 30%;
-  min-height: 100vh;
+  min-height: 94vh;
   background-color: var(--lightgrey);
-  padding-top: 8vh;
+  padding-top: 15vh;
   z-index: 98;
   transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
 .scroll-nav.is-active{
-  left:70%;
+  left:69%;
   box-shadow: 0 0 100px rgb(0, 0, 0); /* Add box-shadow when active */
 }
 
 .scroll-nav a{
   display: block;
-  text-align: center;
+margin-left: 30%;
   color: var(--darkgrey);
   text-decoration: none;
-  margin-top: 15%;
+  margin-top: 10%;
   transition: all 0.2s ease-in-out;
 
 }
@@ -388,10 +389,12 @@ margin: 0 0 150px 0;
   flex-direction: column;
   justify-content: center;
   width: 60%;
+  max-width: 60%;
   margin: 0px 100px 100px 100px;
+  font-weight: bold;
 }
 .contact-form input,textarea{
-  width: 100%;
+  max-width: 100%;
   background-color: var(--lightgrey);
   border: none;
   height: 100px;
@@ -400,9 +403,13 @@ margin: 0 0 150px 0;
 .contact-form textarea{
   height: 200px;
   padding-top: 20px;
+  resize: none;
+
 }
+
 input:focus,textarea:focus{
   outline: none;
+  color: var(--darkgrey);
 }
 .contact-form hr{
   display: block;
