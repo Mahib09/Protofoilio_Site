@@ -20,7 +20,7 @@ window.onscroll = function(){
     const menu_btn=document.querySelector('.hamburger');
     var scroll = window.scrollY; 
             
-    if(scroll>=700 & scroll<=2400){
+    if(scroll>=700 & scroll<=2900){
         hamburger.classList.add('active')
 
     }else

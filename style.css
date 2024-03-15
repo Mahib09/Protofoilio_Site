@@ -223,6 +223,7 @@ ul li:hover .maintext {
 .skills {
   background-color: var(--darkgrey);
   color: var(--lightgrey);
+  height: 100vh;
 }
 .skillsheader {
   padding-top: 80px;
@@ -370,7 +371,89 @@ footer h1{
 .footerend h3{
   margin-left: auto;
 }
+.contact-main{
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
 
+}
+.contact-title{
+font-size: var(--header);
+line-height: 100px;
+margin: 0 0 150px 0;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 0px 100px 100px 100px;
+}
+.contact-form input,textarea{
+  width: 100%;
+  background-color: var(--lightgrey);
+  border: none;
+  height: 100px;
+  font-size: var(--paragraphDesk);
+}
+.contact-form textarea{
+  height: 200px;
+  padding-top: 20px;
+}
+input:focus,textarea:focus{
+  outline: none;
+}
+.contact-form hr{
+  display: block;
+  width: 100%;
+}
+.contact-form button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #858576;
+  border: none ;
+  color: var(--darkgrey);
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact-form button:hover{
+  background-color: var(--accentgreen);
+}
+.contact-description{
+  margin: 300px 100px 0px 100px;
+}
+.contact-footer{
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.contact-footer-content{
+  display: flex;
+  gap: 20px;
+  padding: 0px 50px 50px 50px;
+  font-size: 1rem;
+}
+.contact-nav-socials{
+margin-left: auto;
+
+}
+.contact-footer-content p{
+  margin: 0;
+}
+.contact-nav-socials ul{
+flex-direction: row;
+padding: 0;
+
+
+li a{ 
+margin-left: 10px;
+}
+}
+
+ 
 @media only screen and (min-width: 1181px) {
   .wrapper {
     margin: 50px 60px;
