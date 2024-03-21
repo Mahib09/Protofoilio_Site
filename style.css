@@ -4,14 +4,13 @@
   --lightgrey: #dbd9d9;
   --accentgreen: #656552;
   --white: #ffffff;
-  --paragraphDesk: 1.45rem;
+  --paragraphDesk: 1.4rem;
   --maintext: 7.4rem;
   --header: 4.765rem;
 }
 
 html {
   box-sizing: border-box;
-  font-size: 100%;
   scroll-behavior: smooth;
 }
 *,
@@ -28,9 +27,8 @@ body {
   font-size: var(--paragraphDesk);
   line-height: 1.7rem;
   scroll-behavior: smooth;
-  
 }
-.hamburger-btn{
+.hamburger-btn {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -39,17 +37,16 @@ body {
   z-index: 100;
   margin: -100px 0 0 93%;
   visibility: hidden;
-  transition: all 0.3s cubic-bezier(.7, 0, .2, 1);
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
-.hamburger-btn.active{
-visibility: visible;
-
+.hamburger-btn.active {
+  visibility: visible;
 }
-.hamburger-btn:hover{
+.hamburger-btn:hover {
   background-color: var(--lightgrey);
 }
-.hamburger{
-position: relative;
+.hamburger {
+  position: relative;
   display: inline-block;
   width: 50px;
   cursor: pointer;
@@ -62,7 +59,9 @@ position: relative;
   top: 15px;
   left: 15px;
 }
-.hamburger .bar, .hamburger:after, .hamburger:before{
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
   content: "";
   display: block;
   width: 100%;
@@ -71,19 +70,17 @@ position: relative;
   margin: 6px 0px;
   transition: all 0.3s ease-in-out;
 }
-.hamburger.is-active:before{
+.hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
-.hamburger.is-active:after{
+.hamburger.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
-
 }
-.hamburger.is-active .bar{
+.hamburger.is-active .bar {
   opacity: 0;
 }
 
-
-.scroll-nav{
+.scroll-nav {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -97,35 +94,29 @@ position: relative;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
 }
-.scroll-nav.is-active{
-  left:69%;
+.scroll-nav.is-active {
+  left: 69%;
   box-shadow: 0 0 100px rgb(0, 0, 0); /* Add box-shadow when active */
 }
 
-.scroll-nav a{
+.scroll-nav a {
   display: block;
-margin-left: 30%;
+  margin-left: 30%;
   color: var(--darkgrey);
   text-decoration: none;
   margin-top: 10%;
   transition: all 0.2s ease-in-out;
-
 }
 
-.scroll-nav a:hover{
+.scroll-nav a:hover {
   text-decoration: underline;
   transform: translateX(5px);
   list-style-type: circle var(--black);
-
 }
 
-.wrapper {
-  
-}
 .headbar {
   display: flex;
   gap: 9px;
-  height: 21vh;
   padding: 50px 24px;
 }
 .logo .shownlogo {
@@ -135,7 +126,6 @@ margin-left: 30%;
 
 .nav {
   margin-left: auto;
-
 }
 ul {
   margin: 0;
@@ -167,17 +157,16 @@ ul li:hover .hiddentext {
 ul li:hover .maintext {
   transform: translateY(-100%);
 }
-
+.home {
+  height: 100vh;
+}
 .hero {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -1rem;
   z-index: 2;
-  height: 79vh;
   padding: 50px 24px;
-  
 }
 .hero_header1 {
   font-size: var(--maintext);
@@ -337,12 +326,10 @@ footer {
   width: 100px;
   border-radius: 50%;
   background-color: var(--accentgreen);
-margin-left: 20px;
-
+  margin-left: 20px;
 }
 
-
-footer h1{
+footer h1 {
   font-size: var(--maintext);
   line-height: 199.6px;
   margin-top: 0;
@@ -350,117 +337,119 @@ footer h1{
   text-transform: uppercase;
   text-align: center;
 }
-.footernav nav ul{
+.footernav nav ul {
   padding: 0;
 }
-.footernav nav{
+.footernav nav {
   margin: 0;
 }
-.footernav nav.nav.socials{
+.footernav nav.nav.socials {
   margin-left: auto;
   margin-right: auto;
 }
-.footernav nav hr{
+.footernav nav hr {
   margin: 0 0 15px 0;
   color: var(--darkgrey);
   border: 1px solid var(--darkgrey);
 }
-.footernav nav p{
+.footernav nav p {
   margin: 0;
-
 }
-.footerend h3{
+.footerend h3 {
   margin-left: auto;
 }
-.contact-main{
+.contact-main {
   display: flex;
   gap: 100px;
   align-items: flex-start;
   justify-content: flex-start;
-
 }
-.contact-title{
-font-size: var(--header);
-line-height: 100px;
-margin: 0 0 150px 0;
+.contact-title {
+  font-size: var(--header);
+  line-height: 100px;
+  margin: 0 0 150px 0;
+  font-family: "General Sans", sans-serif;
 }
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  max-width: 60%;
   margin: 0px 100px 100px 100px;
   font-weight: bold;
+  font-family: "General Sans", sans-serif;
 }
-.contact-form input,textarea{
+.contact-form input,
+textarea {
   max-width: 100%;
   background-color: var(--lightgrey);
   border: none;
   height: 100px;
   font-size: var(--paragraphDesk);
 }
-.contact-form textarea{
+.contact-form textarea {
   height: 200px;
   padding-top: 20px;
   resize: none;
-
 }
 
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
   outline: none;
   color: var(--darkgrey);
 }
-.contact-form hr{
+.contact-form hr {
   display: block;
   width: 100%;
 }
-.contact-form button{
+.contact-form button {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #858576;
-  border: none ;
+  border: none;
   color: var(--darkgrey);
   font-size: 1rem;
   text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
-.contact-form button:hover{
+.contact-form button:hover {
   background-color: var(--accentgreen);
 }
-.contact-description{
-  margin: 300px 100px 0px 100px;
+.contact-description {
+  margin: 300px 50px 0 0;
+  font-size: 1.2rem;
 }
-.contact-footer{
+.contact-description nav ul {
+  margin-left: -40px;
+}
+.contact-footer {
   height: fit-content;
   margin: 0;
   padding: 0;
 }
-.contact-footer-content{
+.contact-footer-content {
   display: flex;
   gap: 20px;
   padding: 0px 50px 50px 50px;
   font-size: 1rem;
 }
-.contact-nav-socials{
-margin-left: auto;
-
+.contact-nav-socials {
+  margin-left: auto;
 }
-.contact-footer-content p{
+.contact-footer-content p {
   margin: 0;
 }
-.contact-nav-socials ul{
-flex-direction: row;
-padding: 0;
+.contact-nav-socials ul {
+  flex-direction: row;
+  padding: 0;
+  gap: 0;
 
-
-li a{ 
-margin-left: 10px;
+  li a {
+    margin-left: 10px;
+  }
 }
-}
 
- 
 @media only screen and (min-width: 1181px) {
   .wrapper {
     margin: 50px 60px;
